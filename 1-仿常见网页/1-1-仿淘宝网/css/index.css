@@ -160,7 +160,6 @@
   position: absolute;
   left: -16px;
   top: -1px;
-
   width: 14px;
   height: 14px;
   line-height: 14px;
@@ -218,7 +217,6 @@
   outline: none;
   border: none;
   text-indent: 10px;
-
   position: absolute;
   z-index: 2;
   background-color: transparent; /* 透明，为了能够看到后面的文字 */
@@ -274,10 +272,6 @@
 #nav ul {
   margin-left: 190px;
   height: 30px;
-
-  /* width: 1000px;
-      width: calc(100% - 190px); */ /* 支持情况：IE9+ */
-
   background-image: linear-gradient(to right, #ff9000, #ff5000);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
 }
@@ -288,7 +282,6 @@
   font-size: 14px;
   color: #fff;
   padding: 0 5px;
-
   position: relative;
 }
 #nav ul li.size {
@@ -863,12 +856,10 @@
 #tool {
   width: 50px;
   height: 350px;
-  /* background-color: #f00; */
 
   position: fixed;
   top: 100px;
   right: 3%;
-  /* border: 1px solid #f00; */
 }
 #tool span {
   font-size: 32px;
