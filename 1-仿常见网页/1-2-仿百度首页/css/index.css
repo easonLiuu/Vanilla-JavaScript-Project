@@ -1,0 +1,278 @@
+/* || General page styles */
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  font-family: "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* || header */
+header {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  padding-left: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+.left a {
+  margin-right: 31px;
+  margin-top: 19px;
+  display: inline-block;
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font: 13px/23px Arial, sans-serif;
+}
+
+.left a:hover {
+  color: #315efb;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+  padding-right: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+.right a {
+  margin-left: 32px;
+  margin-top: 18px;
+  display: inline-block;
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font: 13px/23px Arial, sans-serif;
+}
+
+.right .signin:hover {
+  background-color: #315efb;
+}
+
+.right .signin {
+  background-color: #4e6ef2;
+  color: #fff;
+  height: 24px;
+  width: 48px;
+  line-height: 24px;
+  border-radius: 6px;
+}
+
+/* || main page contents */
+main {
+  width: auto;
+  position: relative;
+  height: 40%;
+  min-height: 314px;
+  max-height: 510px;
+  margin: 0 auto;
+}
+
+.head_wrapper {
+  width: 654px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.head_wrapper img {
+  width: 270px;
+  height: 129px;
+  bottom: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -135px;
+  outline: none;
+  text-align: center;
+  list-style: none;
+  z-index: 1;
+}
+
+.form_wrapper {
+  height: 100%;
+}
+
+.wrap {
+  height: 60%;
+  min-height: 185px;
+  max-height: 310px;
+  position: relative;
+  text-align: center;
+}
+
+form {
+  position: relative; /*让main form .click的绝对定位元素的相对位置元素为form*/
+  margin: 0;
+  padding: 0;
+}
+
+.head_wrapper form .white {
+  display: inline-block;
+  width: 546px;
+  vertical-align: top;
+  position: relative;
+}
+.head_wrapper form .ipt,
+.head_wrapper form .soutu {
+  background-image: url(../images/sprites.png);
+  width: 24px;
+  height: 20px;
+  background-size: 24px 96px;
+}
+
+.head_wrapper form .ipt {
+  display: block;
+  position: absolute;
+  background-position: 0 -2px;
+  top: 50%;
+  right: 52px !important;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.head_wrapper form .soutu {
+  position: absolute;
+  background-position: 0 -51px;
+  top: 50%;
+  right: 16px !important;
+  margin-top: -9px;
+  z-index: 1;
+}
+
+.head_wrapper form .ipt:hover {
+  background-position: 0 -26px;
+  cursor: pointer;
+}
+
+.head_wrapper form .soutu:hover {
+  background-position: 0 -75px;
+  cursor: pointer;
+}
+
+.head_wrapper form .soutu-hover-tip {
+  background: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  height: 32px;
+  width: 94px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  color: #626675;
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  right: 5px;
+}
+
+.head_wrapper form .soutu:hover+.soutu-hover-tip {
+  display: inline !important;
+}
+
+#keyword {
+  width: 480px;
+  height: 16px;
+  padding: 12px 48px 12px 16px;
+  font-size: 16px;
+  margin: 0;
+  vertical-align: top;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #c4c7ce;
+  background: #fff;
+  color: #222;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+main form .click {
+  display: inline-block; /*这里inlineblock没起到作用，必须用position: absolute+top:0才把百度一下移上去，没搞懂*/
+  width: 108px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+}
+
+#search {
+  width: 108px;
+  height: 44px;
+  padding: 0;
+  background: 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: #4e6ef2;
+  border-radius: 0 10px 10px 0;
+  font-size: 17px;
+  color: #fff;
+  box-shadow: none;
+  font-weight: 400;
+  border: none;
+  outline: 0;
+  line-height: 44px; /*行高和height相同，自然居中了*/
+}
+
+#search:hover {
+  background-color: #315efb;
+}
+
+aside {
+  position: fixed;
+  right: 24px;
+  bottom: 64px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+aside img {
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+/* || footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 39px;
+  padding-top: 1px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+footer p:last-child {
+  margin-left: -2px;
+  margin-right: 0;
+}
+
+footer p a {
+  color: #bbb;
+  text-decoration: none;
+}
