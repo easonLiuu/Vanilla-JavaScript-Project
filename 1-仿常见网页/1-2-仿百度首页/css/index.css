@@ -178,10 +178,32 @@ form {
   z-index: 2;
   top: 52px;
   right: 5px;
+  display: none;
 }
 
-.head_wrapper form .soutu:hover+.soutu-hover-tip {
-  display: inline !important;
+.head_wrapper form .voice-hover {
+  display: none;
+  background: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  height: 32px;
+  width: 94px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  color: #626675;
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  right: 40px;
+}
+
+.head_wrapper form .soutu:hover + .soutu-hover-tip {
+  display: inline;
+}
+
+.head_wrapper form .ipt:hover + .voice-hover {
+  display: inline;
 }
 
 #keyword {
@@ -202,7 +224,7 @@ form {
 }
 
 main form .click {
-  display: inline-block; /*这里inlineblock没起到作用，必须用position: absolute+top:0才把百度一下移上去，没搞懂*/
+  display: inline-block; /*position: absolute+top:0把百度一下移上去，没搞懂*/
   width: 108px;
   height: 44px;
   position: absolute;
