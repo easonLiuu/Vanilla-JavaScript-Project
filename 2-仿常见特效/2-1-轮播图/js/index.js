@@ -67,6 +67,7 @@ function showCurrentDot () {
 for (var i = 0, len = dots.length; i < len; i++){
     (function(i){
         dots[i].onclick = function () {
+            //距离
             var dis = index - i;
             if (index == 4 && parseInt(wrap.style.left)!==-3000) {
                 dis = dis - 5;     
