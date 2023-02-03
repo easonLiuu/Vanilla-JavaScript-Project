@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paging{
+    display: flex;
+    align-items: center;
+}
+.paging div{
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    /* margin: 0 10px; */
+    font-size: 14px;
+}
+.paging div.disable{
+    color: #fff;
+    cursor: not-allowed;
+    background-color: rgb(211, 211, 211);
+}
+.paging div.active{
+    background-color: rgb(78, 216, 250);
+    color: #fff;
+}
+.paging .first,.paging .prev{
+    margin-right: 10px;
+}
+.paging .next,.paging .last {
+    margin-left: 10px;
+}
+.paging .pagingDiv {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
