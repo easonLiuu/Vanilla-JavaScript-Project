@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+  background-color: #add8e6;
+}
+.container {
+  width: 300px;
+  margin: 50px auto;
+}
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.item select {
+  border: transparent;
+  width: 70%;
+}
+.item .title {
+  color: #008c8c;
+}
+.item .icon {
+  color: #ccc;
+}
